@@ -1,27 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import axios from 'axios';
 import './App.css';
 
 const App: React.FC = () => {
+  useEffect(() => {
+    const getData = async () => {
+      const result = await axios.get('http://lol.dk').then((response: any) => {
+        console.log(response);
+      });
+    };
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Sarquah's tool</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Project Management</h1>
     </div>
   );
-}
+};
 
 export default App;
