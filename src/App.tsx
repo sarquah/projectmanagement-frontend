@@ -1,22 +1,25 @@
-import React, { useEffect } from 'react';
-import axios from 'axios';
-import './App.css';
-import Projects from './Projects';
+import React from 'react'
+import './App.css'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Projects from './Projects'
 
 const App: React.FC = () => {
-  useEffect(() => {
-    const getData = async () => {
-      const result = await axios.get('http://lol.dk').then((response: any) => {
-        console.log(response);
-      });
-    };
-  }, []);
   return (
-    <div>
-      <h1>Project Management</h1>
-      <Projects />
-    </div>
-  );
-};
+    <Container>
+      <Row>
+        <Col>
+          <h1>Project Management</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Projects />
+        </Col>
+      </Row>
+    </Container>
+  )
+}
 
-export default App;
+export default App
