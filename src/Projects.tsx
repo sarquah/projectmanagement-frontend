@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import ListGroup from 'react-bootstrap/ListGroup'
 import spinner from './images/spinner.gif'
-import styles from './Projects.module.css'
+import styles from './Projects.module.scss'
 
 const Projects: React.FC = () => {
   const [projectNames, setProjectNames] = useState([])
