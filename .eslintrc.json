@@ -17,7 +17,9 @@
     "prettier",
     "prettier/@typescript-eslint",
     "prettier/react",
-    "react-app"
+    "react-app",
+    "plugin:import/errors",
+    "plugin:import/warnings"
   ],
   "globals": {
     "Atomics": "readonly",
