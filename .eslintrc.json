@@ -16,7 +16,8 @@
     "airbnb",
     "prettier",
     "prettier/@typescript-eslint",
-    "prettier/react"
+    "prettier/react",
+    "react-app"
   ],
   "globals": {
     "Atomics": "readonly",
