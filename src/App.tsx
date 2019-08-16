@@ -1,22 +1,17 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Projects from './Projects'
-import styles from './App.module.scss'
+import Projects from './containers/Projects'
+import Header from './components/Header'
 
 const App: React.FC = () => {
   return (
     <Container>
       <Row>
-        <Col className={styles.header}>
-          <h1>Project Management App</h1>
-        </Col>
+        <Header />
       </Row>
       <Row>
-        <Col>
-          <Projects />
-        </Col>
+        <Projects />
       </Row>
     </Container>
   )
